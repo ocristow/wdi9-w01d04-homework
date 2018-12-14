@@ -6,4 +6,31 @@
 // Return may or may not return a value to the programmer, but it also affects the control flow of the code, while 
 // console.log doesn't.
 
-// 2.
+// 2. 
+
+
+function checkPalindrome(aWord){
+
+    let makeNorm = aWord.toLowerCase();
+    
+    let Palindrome = makeNorm.split('').reverse().join('');
+    
+    if(makeNorm === Palindrome){
+      
+      console.log(aWord + " is a Palindrome");
+    
+    }else{
+      
+      console.log(aWord + " is not a Palindrome");
+    }
+    }
+
+    checkPalindrome("radar");
+    checkPalindrome("boob");
+    checkPalindrome("stinky");
+
+
+
+
+
+
