@@ -11,19 +11,19 @@
 
 // PART 2. PALINDROME AGAIN
 
-// function checkPalindrome(word){
+function checkPalindrome(word){
 
-//     const compWord = word;
-//     const revWord = compWord.split('').reverse().join('');
-//     if(compWord === revWord){
-//       console.log(compWord + " is a Palindrome");
-//     } else {
-//       console.log(compWord + " is not a Palindrome");
-//     }
-//     }
-//     checkPalindrome("radar");
-//     checkPalindrome("boob");
-//     checkPalindrome("beer");
+    const compWord = word;
+    const revWord = compWord.split('').reverse().join('');
+    if(compWord === revWord){
+      console.log(compWord + " is a Palindrome");
+    } else {
+      console.log(compWord + " is not a Palindrome");
+    }
+    }
+    checkPalindrome("radar");
+    checkPalindrome("boob");
+    checkPalindrome("beer");
 
 
 
@@ -58,84 +58,70 @@ sumDigits(77);
 
 // 4. Pythagoras Theorem
 
-// let sideC;
-// let sideCSq;
+let sideC;
+let sideCSq;
 
-//     function calcSideC (sideA, sideB) {
-//         sideASq = (Math.pow(sideA, 2)); 
-//         console.log(sideASq);
-//         sideBSq = (Math.pow(sideB, 2));
-//         console.log(sideBSq);
-//         sideCSq = (sideASq + sideBSq);
-//         console.log(sideCSq);
-//         sideC = Math.sqrt(sideCSq);
-//         console.log(sideC);
-//     }
+    function calcSideC (sideA, sideB) {
+        sideASq = (Math.pow(sideA, 2)); 
+        console.log(sideASq);
+        sideBSq = (Math.pow(sideB, 2));
+        console.log(sideBSq);
+        sideCSq = (sideASq + sideBSq);
+        console.log(sideCSq);
+        sideC = Math.sqrt(sideCSq);
+        console.log(sideC);
+    }
 
-//     calcSideC(2, 4);
-
-
+    calcSideC(2, 4);
 
 
+// 5. SUM ARRAY
+let numbers = [1,2,3,4]
+let sum = 0;
 
+numSum =  function (array){
+for (var i = 0; i < numbers.length; i++){
+  sum += numbers[i]
+}
+}
 
-
-
-
-
-
-// 5.
-// let numbers = [1,2,3,4]
-// let sum = 0;
-
-// numSum =  function (array){
-// for (var i = 0; i < numbers.length; i++){
-//   sum += numbers[i]
-// }
-// }
-
-// numSum(numbers);
-// console.log(sum);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+numSum(numbers);
+console.log(sum);
 
 
 // 6. CHECK PRIME
 
-// function checkPrime(num) {
-//     let prime = true;
-//     for (let i = 2; i <= Math.sqrt(num); i++) {
-//         if (num % i == 0) {
-//             prime = false;
-//             break;
-//         }
-//     }
-//     console.log("Nope, " + num + prime);
-// }
 
-// checkPrime(22);
+function checkPrime (num) {
+    let prime = true;
+    for (let i = 2; i <= num; i++) {
+      if (num%i===0 && i!==num) {
+          prime = false;
+          console.log(`Nope the number ${num} is not prime`);
+          break;
+      }  else {
+        console.log(`Yeah, the number ${num} is prime!`);
+    }
+}
+}
+
+checkPrime(8);
+checkPrime(12);
+checkPrime(37);
 
 
+function printPrimes(num){
+for (let counter = 0; counter <= num; counter++) {
 
-
-
-// function printPrimes(primeNum) {
-//     for(i=0; i<=primeNum; i++) {
-//         if (checkPrime()
-//             console.log(primeNum);
-//     }
-// }
-
-// printPrimes();
+    let prime = true;
+    for (let i = 2; i <= num; i++) {
+        if (counter%i===0 && i!==counter) {
+            prime = false;
+        }
+    }
+    if (prime === true) {
+                console.log(counter);
+    }
+}
+}
+printPrimes(91);
