@@ -6,10 +6,10 @@
 // Return may or may not return a value to the programmer, but it also affects the control flow of the code, while 
 // console.log doesn't.
 
-// 3. 
+// 3. We can use the returned value elsewhere in our program instead of it merely being logged in the console.
 
 
-
+// PART 2. PALINDROME AGAIN
 
 // function checkPalindrome(word){
 
@@ -29,56 +29,29 @@
 
 
 
-// 3. 
-// Write a function sumDigits that accepts a number and returns the sum of its digits.
-// console.log(sumDigits(42));
-// => 6;
+// 3. SUMDIGITS
 
 
-// function sumDigits(number)
-
-// function sumDigits(number) {
-
-//     let numString = number.toString();
-//    //convert number into string
-//    let numSplit = numString.split(''); 
-//    // split up the digits into an array ['2', '3', '1']
-//    let sum = numSplit[i] += sum;
-//    for (let i = 0; i < numSplit.length; i++) {
-   
-   
-//    let sum = [];
-//    // create a sum variable to hold onto the total
-     
-//    // loop over the array
-//     let newNum = numSplit.parseInt()
-//    // Turn each digit back into a number before adding it to the total
-    
-//    // Add the digit to the total
-
-//    // return the total
-//         console.log(numSplit);     
-//     }
-// sumDigits(231);
+let sum = 0;
+function sumDigits(num) {
+let singleNums = num.toString().split('');
+// console.log(singleNums);
+let newNums = singleNums.map(Number)
+// console.log(newNums);
+for (let i = 0; i < newNums.length; i++){
+    // console.log(newNums[i]);
+    addThis = newNums[i];
+    sum += addThis;
+    console.log(sum);
+}
+}
+sumDigits(77);
 
 
 
 
-// function sumDigits(number){
-//     let numSplit = number.split('');
-//     let sum += numSplit[i];
-//     for (let i = 0; i < numSplit.length; i++){
-//         //how to parseInt.()
-//         let sumArray = numSplit.parseInt();
-//         //add array
-
-//         // return the total
-//         console.log(sum);
-//     }
-// }
 
 
-// sumDigits(231);
 
 
 
@@ -103,16 +76,66 @@
 
 
 
+
+
+
+
+
+
+
+
 // 5.
-let numbers = [1,2,3,4]
-let sum = 0;
+// let numbers = [1,2,3,4]
+// let sum = 0;
 
-numSum =  function (array){
-for (var i = 0; i < numbers.length; i++){
-  sum += numbers[i]
-}
-}
+// numSum =  function (array){
+// for (var i = 0; i < numbers.length; i++){
+//   sum += numbers[i]
+// }
+// }
 
-numSum(numbers);
-console.log(sum);
+// numSum(numbers);
+// console.log(sum);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 6. CHECK PRIME
+
+// function checkPrime(num) {
+//     let prime = true;
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i == 0) {
+//             prime = false;
+//             break;
+//         }
+//     }
+//     console.log("Nope, " + num + prime);
+// }
+
+// checkPrime(22);
+
+
+
+
+
+// function printPrimes(primeNum) {
+//     for(i=0; i<=primeNum; i++) {
+//         if (checkPrime()
+//             console.log(primeNum);
+//     }
+// }
+
+// printPrimes();
