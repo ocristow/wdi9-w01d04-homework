@@ -85,36 +85,34 @@
 
 // 4. Pythagoras Theorem
 
-let sideC;
-let sideCSq;
+// let sideC;
+// let sideCSq;
 
-    function calcSideC (sideA, sideB) {
-        sideASq = (Math.pow(sideA, 2)); 
-        console.log(sideASq);
-        sideBSq = (Math.pow(sideB, 2));
-        console.log(sideBSq);
-        sideCSq = (sideASq + sideBSq);
-        console.log(sideCSq);
-        sideC = Math.sqrt(sideCSq);
-        console.log(sideC);
-    }
+//     function calcSideC (sideA, sideB) {
+//         sideASq = (Math.pow(sideA, 2)); 
+//         console.log(sideASq);
+//         sideBSq = (Math.pow(sideB, 2));
+//         console.log(sideBSq);
+//         sideCSq = (sideASq + sideBSq);
+//         console.log(sideCSq);
+//         sideC = Math.sqrt(sideCSq);
+//         console.log(sideC);
+//     }
 
-    calcSideC(2, 4);
+//     calcSideC(2, 4);
 
 
 
 // 5.
+let numbers = [1,2,3,4]
+let sum = 0;
 
-// sumArray = function
-// Write a function sumArray that takes an array as an argument. The array should contain numbers. The function should return the sum of the numbers in the array.
+numSum =  function (array){
+for (var i = 0; i < numbers.length; i++){
+  sum += numbers[i]
+}
+}
 
-// Expected result:
-
-// console.log(sumArray([1, 2, 3, 4, 5, 6]));
-// => 21
-
-
-
-
-
+numSum(numbers);
+console.log(sum);
 
